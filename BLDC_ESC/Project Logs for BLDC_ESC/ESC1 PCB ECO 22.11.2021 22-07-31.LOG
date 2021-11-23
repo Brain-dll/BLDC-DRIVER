@@ -1,0 +1,4 @@
+Removed Pin From Net: NetName=R\E\S\E\T\_N Pin=J1-3
+Removed Pin From Net: NetName=MOSI Pin=J1-5
+Added Pin To Net: NetName=MOSI Pin=J1-3
+Added Pin To Net: NetName=R\E\S\E\T\_N Pin=J1-5
