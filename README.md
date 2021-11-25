@@ -7,9 +7,12 @@ and full bridge, actually these drivers are working same priciple but there is o
 opposite pole at the same time. Thus system is more efficient. But Half bridge driver can effect just one coil at the same time. You can observe difference of half and full bridge driver designs
  at below picture:
 
-*HALF BRIDGE DRIVER*
+**HALF BRIDGE DRIVER**
+
 ![Image](/Assets/HALF.ppm)
-*FULL BRIDGE DRIVER*
+
+**FULL BRIDGE DRIVER**
+
 ![Image](/Assets/FULL.webp)
 
 All kind of driver have a problem which is how we can determined to change energize squence. If we wanna know this knowledge, we have to know rotor current position. There are two way for determining 
