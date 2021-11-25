@@ -1,0 +1,6 @@
+DRC Rules Export File for PCB: C:\Users\Beytu\projects\BLDC-DRIVER\BLDC_ESC\ESCV2.PcbDoc
+RuleKind=Width|RuleName=Width_POWER|Scope=Board|Minimum=11.81
+RuleKind=SolderMaskExpansion|RuleName=SolderMaskExpansion|Scope=Board|Minimum=3.94
+RuleKind=Width|RuleName=Width|Scope=Board|Minimum=11.81
+RuleKind=Clearance|RuleName=Clearance|Scope=Board|Minimum=7.87
+RuleKind=ShortCircuit|RuleName=ShortCircuit|Scope=Board|Allowed=0

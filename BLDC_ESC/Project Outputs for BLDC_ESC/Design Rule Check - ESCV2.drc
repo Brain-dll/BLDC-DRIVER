@@ -1,17 +1,15 @@
 Protel Design System Design Rule Check
 PCB File : C:\Users\Beytu\projects\BLDC-DRIVER\BLDC_ESC\ESCV2.PcbDoc
-Date     : 24.11.2021
-Time     : 13:12:23
-
-WARNING: Unplated multi-layer pad(s) detected
-   Pad MH2-1(3.81mm,26.162mm) on Multi-Layer on Net GND
-   Pad MH3-1(56.134mm,3.81mm) on Multi-Layer on Net GND
-   Pad MH4-1(3.81mm,3.81mm) on Multi-Layer on Net GND
+Date     : 25.11.2021
+Time     : 19:14:06
 
 Processing Rule : Clearance Constraint (Gap=0.2mm) (All),(All)
 Rule Violations :0
 
 Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
+Rule Violations :0
+
+Processing Rule : Un-Routed Net Constraint ( (All) )
 Rule Violations :0
 
 Processing Rule : Modified Polygon (Allow modified: No), (Allow shelved: No)
@@ -20,10 +18,13 @@ Rule Violations :0
 Processing Rule : Width Constraint (Min=0.3mm) (Max=0.5mm) (Preferred=0.3mm) (All)
 Rule Violations :0
 
+Processing Rule : Width Constraint (Min=0.3mm) (Max=3mm) (Preferred=0.3mm) (InNet('+*') or InNet('GND') OR InNet('phase*'))
+Rule Violations :0
+
 Processing Rule : Routing Layers(All)
 Rule Violations :0
 
-Processing Rule : Routing Via (MinHoleWidth=0.3mm) (MaxHoleWidth=0.3mm) (PreferredHoleWidth=0.3mm) (MinWidth=0.6mm) (MaxWidth=0.6mm) (PreferedWidth=0.6mm) (All)
+Processing Rule : Routing Via (MinHoleWidth=0.3mm) (MaxHoleWidth=0.5mm) (PreferredHoleWidth=0.3mm) (MinWidth=0.6mm) (MaxWidth=1mm) (PreferedWidth=0.6mm) (All)
 Rule Violations :0
 
 Processing Rule : Differential Pairs Uncoupled Length using the Gap Constraints (Min=0.254mm) (Max=0.254mm) (Prefered=0.254mm)  and Width Constraints (Min=0.381mm) (Max=0.381mm) (Prefered=0.381mm) (All)
@@ -44,10 +45,10 @@ Rule Violations :0
 Processing Rule : Minimum Solder Mask Sliver (Gap=0.1mm) (All),(All)
 Rule Violations :0
 
-Processing Rule : Silk To Solder Mask (Clearance=0.1mm) (IsPad),(All)
+Processing Rule : Silk To Solder Mask (Clearance=0mm) (IsPad),(All)
 Rule Violations :0
 
-Processing Rule : Silk To Solder Mask (Clearance=0mm) (IsPad),(All)
+Processing Rule : Silk To Solder Mask (Clearance=0.1mm) (IsPad),(All)
 Rule Violations :0
 
 Processing Rule : Silk to Silk (Clearance=0.1mm) (All),(All)
