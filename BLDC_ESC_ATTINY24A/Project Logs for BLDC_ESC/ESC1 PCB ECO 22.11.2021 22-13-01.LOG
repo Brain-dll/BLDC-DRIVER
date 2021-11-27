@@ -1,6 +1,0 @@
-Removed Pin From Net: NetName=R\E\S\E\T\_N Pin=J1-5
-Removed Pin From Net: NetName=GND Pin=J1-6
-Added Pin To Net: NetName=GND Pin=J1-5
-Added Pin To Net: NetName=R\E\S\E\T\_N Pin=J1-6
-Added Room: Name=ESC1
-Added Room: Name=ESC2
