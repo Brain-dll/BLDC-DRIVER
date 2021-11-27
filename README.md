@@ -19,8 +19,11 @@ The problem with BLDC drivers is that they don't know the right moment of energi
 There are two way for determining current rotor position. First one is traditional technic which uses hall effect sensors. According to sensors output, driver can understand current 
 moment of changing. To use extra sensors can increase motors cost, connection number and volume. So this makes our boards more complex. Second way is EMF technic. Stator coil has 
 star connection, total voltage level of junction point of these coils always have to be zero. According to below picture, When rotor turns around itself total magnetic field of 
-star connection be forced to stay at zero. We can call common point of coils as virtual zero. According to EMF graph, we can understand that magnets come to middle of the two coils, 
-when unenergized coil cross the virtual zero. Thus we can detect correct moment for energizing next coil.
+star connection be forced to stay at zero. If you observe graph of EMF and sum of magnetic fields, you can see total magnetic flux is zero. We can call common point of coils as virtual 
+zero. According to EMF graph, we can understand that magnets come to middle of the two coils, when unenergized coil cross the virtual zero. Thus we can detect correct moment for 
+energizing next coil. For example, when A input be charged and B input is uncharged, C input will be inducted with energy and due to motion, the pole of energy will be changed. Thus 
+the energy of C input crosses the virtual zero limit. This level-changing event will be followed by the controller. When this event occurs, the ISR goes into propagation and the energizing 
+order is changed.
 
 ![Image](/Assets/BLDC-Motor-working.jpg)
 
@@ -52,4 +55,4 @@ Our schematic design consist of two page. First of them includes controller desi
 
 ![Second_page](/Assets/Second_page.JPG)
 
-As you can see, some resistors combination was built, purpose of this combination is taking acceptable feedback from driver.
+As you can see, some resistors combination was built, purpose of this combination is taking acceptable feedback from driver (for back EMF).
